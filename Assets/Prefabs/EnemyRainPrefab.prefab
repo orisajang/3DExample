@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8786609628864316937}
   m_Layer: 0
   m_Name: EnemyRainPrefab
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -124,4 +124,3 @@ MonoBehaviour:
   _damage: 1
   _maxHp: 3
   _weight: 0
-  leftEndPosZ: {fileID: 0}

@@ -39,11 +39,14 @@ public class Enemy : MonoBehaviour
                 return;
             }
         }
-        if(collision.gameObject.CompareTag("PlayerBullet"))
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("PlayerBullet"))
         {
-            Debug.Log($"적에 충돌 감지 :{collision.gameObject.name}와 충돌");
+            Debug.Log($"적에 충돌 감지 :{other.gameObject.name}와 충돌");
             //Destroy(gameObject);
-            gameObject.SetActive(false); 
+            gameObject.SetActive(false);
         }
     }
 }

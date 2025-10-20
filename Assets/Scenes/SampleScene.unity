@@ -152,6 +152,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 7629530002630161407, guid: 1ee2b3a1aa8d3c84f800e97424b2abf1, type: 3}
+  enemyPrefab: {fileID: 6570297885633291668, guid: bd7eb59999d5f42408f09d24a38f91a9, type: 3}
+  poolLength: 3
+  enemyDelayTime: 2
   <_unityEvent>k__BackingField:
     m_PersistentCalls:
       m_Calls: []
@@ -164,7 +167,7 @@ Transform:
   m_GameObject: {fileID: 321439411}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.24000001, y: 1.13, z: 9.599499}
+  m_LocalPosition: {x: -0.24000001, y: 2.15, z: 9.599499}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

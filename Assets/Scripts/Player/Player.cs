@@ -50,6 +50,7 @@ public class Player : MonoBehaviour
         {
             //_weapon.ShootBullet(); //싱글톤에서 발사를 책임지도록 결정
             Debug.Log("발사");
+
             GameManagerScript.Instance.ShootBullet(_shotPos.position, _shotPos.rotation);
         }
         if (Input.GetKeyDown(KeyCode.X))
