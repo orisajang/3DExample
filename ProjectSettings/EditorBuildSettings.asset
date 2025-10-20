@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/SingleTon1.unity
+    guid: 2cdedc353c4d0d845afd096b7a8d7e5a
+  - enabled: 1
+    path: Assets/Scenes/WayPointScene.unity
+    guid: 873a38eaa30d56a4a8b6ff09e0a8a977
+  - enabled: 1
+    path: Assets/Scenes/RigidBody_Collision.unity
+    guid: feecd620f83c2594882356fb1f01cb2b
   m_configObjects: {}

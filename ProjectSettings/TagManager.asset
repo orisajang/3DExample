@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - PlayerBullet
+  - Wall
+  - Enemy
+  - WaypointChecker
   layers:
   - Default
   - TransparentFX
@@ -12,14 +16,14 @@ TagManager:
   - Water
   - UI
   - 
+  - Cube
+  - Sphere
+  - Capsule
+  - Cylinder
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - MyTank
   - 
   - 
   - 
