@@ -10,6 +10,10 @@ public class Player : MonoBehaviour
     [SerializeField] private Transform _shotPos;
     private Weapon _weapon;
 
+    private List<IPlayerHpObserver> _hpObservers = new List<IPlayerHpObserver>();
+    public void AddHpObserver(IPlayerHpObserver Observer) => _hpObservers.Add(Observer);
+    public void RemoveHpObserver(IPlayerHpObserver Observer) => _hpObservers.Remove(Observer);
+
 
     private List<GameObject> bulletPool; //오브젝트 풀 쓰기
     private float _curHp;
@@ -31,16 +35,26 @@ public class Player : MonoBehaviour
         _curHp = _maxHp;
         transform.position = _trfStartPos.position;
         gameObject.SetActive(true);
+        NotifyHpUpdate();
     }
     public void OnTakeDamage(float damage)
     {
         _curHp -= damage;
         Debug.Log($"playerHp = {_curHp}");
+        NotifyHpUpdate(); 
         if (_curHp <= 0) 
         {
             GameManager.Instance.ChangeGameState();
             _curHp = 0;
             //gameObject.SetActive(false);
+        }
+    }
+
+    private void NotifyHpUpdate()
+    {
+        foreach(IPlayerHpObserver observer in _hpObservers)
+        {
+            observer.OnPlayerHpChanged(_curHp, _maxHp);
         }
     }
 

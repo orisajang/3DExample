@@ -352,6 +352,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxHp: 2
+  _trfStartPos: {fileID: 0}
+  _shotPos: {fileID: 0}
 --- !u!114 &4434861221268183252
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -365,8 +367,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 7629530002630161407, guid: 1ee2b3a1aa8d3c84f800e97424b2abf1, type: 3}
-  _Speed: 5
-  weaponPosition: {fileID: 2689353464079510392}
+  weaponPosition: {fileID: 6133936607069102337}
 --- !u!135 &8066654095202122622
 SphereCollider:
   m_ObjectHideFlags: 0
