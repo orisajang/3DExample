@@ -7,12 +7,6 @@ public class ScriptForMergeTest : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        Debug.LogError("충돌? 어째서? ㅜㅜㅜ");
     }
 }
